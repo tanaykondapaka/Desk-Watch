@@ -153,13 +153,13 @@ button:disabled{opacity:.5;cursor:not-allowed}
 
 <div class="noise" id="noise" hidden role="alert"><b>NO MUSIC</b><span>Turn it off. This screen clears once the room is quiet. Focus time is paused until then.</span><small id="noiseFor"></small></div>
 <div class="alarm" id="alarm" hidden>
-  <span id="alarmText">You've been away for 5 minutes.</span>
+  <span id="alarmText">You've been away for 2 minutes.</span>
   <button id="btnHere">I'm back</button>
 </div>
 
 <script type="module">
 /* ---------- fixed rules ---------- */
-const CHECK_MS=10000, AWAY_MS=5*60000, STREAK=2;
+const CHECK_MS=10000, AWAY_MS=2*60000, STREAK=2;
 const LATE_BED_MS=3*60000;                       // a late session ends once the away alarm has rung this long
 const NOISE_DB=-40, NOISE_WIN=20000, NOISE_ON=.6, NOISE_OFF=.2;  // loud = 1-second average above -40 dBFS for 60% of the last 20 s
 
