@@ -84,7 +84,7 @@ button:disabled{opacity:.5;cursor:not-allowed}
 .meter{position:relative;height:8px;border-radius:99px;background:var(--idle-bg);margin-top:10px;overflow:hidden}
 .meter i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--ok);border-radius:99px;transition:width .2s}
 .meter i.loud{background:var(--bad)}
-.meter b{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--fg);left:73.3333333333333333333333333333333%}
+.meter b{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--fg);left:74.67%}
 .noise{position:fixed;inset:0;z-index:21;background:#c22f2f;color:#fff;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:center;text-align:center;
   padding:24px max(16px,env(safe-area-inset-right,0px)) 24px max(16px,env(safe-area-inset-left,0px))}
 .noise b{font:700 clamp(3.5rem,14vw,10rem)/.95 var(--display);letter-spacing:.02em}
@@ -161,7 +161,7 @@ button:disabled{opacity:.5;cursor:not-allowed}
 /* ---------- fixed rules ---------- */
 const CHECK_MS=10000, AWAY_MS=2*60000, STREAK=2;
 const LATE_BED_MS=3*60000;                       // a late session ends once the away alarm has rung this long
-const NOISE_DB=-35, NOISE_WIN=20000, NOISE_ON=.6, NOISE_OFF=.2;  // loud = 1-second average above -40 dBFS for 60% of the last 20 s
+const NOISE_DB=-34, NOISE_WIN=20000, NOISE_ON=.6, NOISE_OFF=.2;  // loud = 1-second average above -40 dBFS for 60% of the last 20 s
 
 /* ---------- timetable (from Focus Room) ---------- */
 const hm=(h,m)=>h*60+m;
